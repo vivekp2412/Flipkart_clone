@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: antiquewhite;
+}
+/* Navbar section css starts */
+.navbar{
+    background-color: #2874f0;
+    max-width: 100%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+}
+
+.nav_left{
+    display: flex;
+    /* flex: content; */
+    /* justify-content: center; */
+}
+.nav_right{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    background-color: #2874f0;
+   
+
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+    /* margin-left: 186px; */
+    margin-top:10px;
+
+}
+.flipkart_logo{
+    height: 20.11px;
+    width: 75px;
+    margin-bottom: 0;
+}
+.logo a {
+    text-decoration: none;
+}
+.explore{
+    color: white;
+    font: 11px Roboto ;
+    font-style: italic;
+    margin-top: -1px;
+}
+.plus{
+    color: #FFE500;
+    font: 11px Roboto;
+    font-style: italic;
+    margin-top: -1px;
+}
+.logo_text{
+
+    margin-top: -5px;
+    position: relative;
+    top: -3px;
+}
+.logo_text img{
+    width: 10px;
+    height: 10px;
+}
+.searchbar{
+    /* min-width: 304px; */
+    /* max-width:70%; */
+    height: 56px;
+    padding: 10px;
+    margin: 0 0px;
+    flex: 1;
+    width: 564px;
+}
+.search_input{
+    padding: 0 16px;
+    border-radius: 2px 0 0 2px;
+    border: 0;
+    outline: 0 none;
+    font-size: 14px;
+    height: 36px;
+    width: 100%;
+
+    
+}
+.login{
+    height: 56px;
+    width: 130px;
+    display: flex;
+    /* padding: 12px; */
+    /* margin-left: 250px; */
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.loginbutton{
+    width: 100%;
+    height: 31px;
+    font:16px Arial;
+    font-weight: bold;
+    color:#2874f0
+}
+.more{
+    height: 56px;
+    width: 130px;
+    color: white;
+    
+
+    font: 16px Roboto;
+    font-weight: bold;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-sharp{
+    margin: 5px;
+}
+.fa-solid{
+    margin: 5px;
+}
+.cart{
+    height: 56px;
+    width: 130px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    font: 16px Roboto;
+    font-weight: bold;
+    
+}
+@media screen  and (max-width:675px) {
+    .searchbar{
+        width:70%;
+    }
+    .nav_right{
+        width: 100%;
+    }
+}
+@media screen  and (max-width:1050px) {
+   
+    .nav_right{
+        width: 100%;
+    }
+}
+/* Navbar section css ends */
+
