@@ -6,6 +6,7 @@
 .container{
     background-color: antiquewhite;
 }
+/* Navbar section css starts */
 .navbar{
     background-color: #2874f0;
     max-width: 100%;
@@ -153,4 +154,5 @@
         width: 100%;
     }
 }
+/* Navbar section css ends */
 
