@@ -2,7 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: 2px solid black;
 }
+
 .container{
     background-color:white;
 }
@@ -51,14 +53,17 @@
 }
 .explore{
     color: white;
-    font: 11px Roboto ;
+    font: 11px;
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
     margin-top: -1px;
 }
 .plus{
     color: #FFE500;
-    font: 11px Roboto;
+    
+    font: 11px;
     font-style: italic;
+    font-family: 'Roboto';
     margin-top: -1px;
 }
 .logo_text{
@@ -104,9 +109,11 @@
 .loginbutton{
     width: 100%;
     height: 31px;
-    font:16px Arial;
-    font-weight: bold;
-    color:#2874f0
+    font-size:16px ;
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: bold; */
+    color:#2874f0;
+    outline: none;
 }
 .more{
     height: 56px;
@@ -114,7 +121,8 @@
     color: white;
     
 
-    font: 16px Roboto;
+    font: 16px;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     align-self: center;
     display: flex;
@@ -137,7 +145,8 @@
     align-items: center;
     color: white;
     align-self: center;
-    font: 16px Roboto;
+    font: 16px;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     
 }
@@ -170,7 +179,7 @@
 /* Navbar section css ends */
 
 
-/* Header Section */
+/* Categories Section */
 .categories{
     display: grid;
     grid-template-columns: repeat(10,1fr);
@@ -179,7 +188,8 @@
     /* place-content: center; */
     max-width: 1280px;
     margin: 0 auto;
-    overflow: scroll;
+    overflow-x: scroll;
+    background-color:white;
 }
 .categories_items{
  width: 80px;
@@ -194,10 +204,152 @@
 
 }
 .categories_text{
-    font: 14px Arial;
-    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: bold; */
 }
 .categories_img{
     width: 64px;
     height: 64px;
+}
+.main_body{
+    background-color: #f1f3f6;
+}
+/* Main Content of the day */
+.section{
+    background-color: white;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+   
+ 
+}
+
+.section_title{
+    display: flex;
+    flex-direction: row;
+flex-wrap: nowrap;
+align-items: baseline;
+padding: 30px;
+justify-content: space-between;
+font: 30px;
+font-family: 'Roboto', sans-serif;
+  
+}
+.section-head{
+    font-size: 29px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.view_button{
+    background-color: #2874f0;
+    font-weight: bold;
+    color: white;
+    max-width: 120px;
+    border-radius: 5px;
+    font: 20px Arial;
+    padding: 10px 20px;
+   outline: none;
+   border: none;
+   margin: 10px 0;
+   
+}
+.timer{
+   
+    font: 16px solid grey;
+    margin: 10px;
+}
+.fa-clock{
+    color:black;
+}
+.items_grids{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-top: 2px solid #f1f3f6;
+  
+    margin: auto;
+    overflow-x: scroll;
+    max-width: 100%;
+}
+.item_box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    
+}
+.item_img{
+    width: 200px;
+    height: 200px;
+    margin: 10%;
+    object-fit: contain;
+}
+.item_title{
+   
+   
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.item_price{
+    font: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #388E3C;
+    margin: 5px 0;
+}
+.small-des{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+}
+/* .advertisement {
+    max-height:444px;
+    
+} */
+.deal_of_the_day{
+    max-width: 65%;
+}
+
+@media screen and (max-width:705px) {
+    .section_title{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width:488px) {
+    .section_title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width:487px) {
+    .title_text{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    
+}
+.advertisement img{
+    max-width: 100%;
+    max-height: 444px;
+}
+.advertisement{
+    padding: 0px;
+}
+.abhi{
+    display: flex;
+    max-width: fit-content;
+    justify-content: flex-start;
 }
