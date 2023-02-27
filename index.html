@@ -1,111 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+ <!-- Bootstrap Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+     <!-- Google fonts Style Cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <!-- External css file -->
+    <link rel="stylesheet" href="navbar.css" />
     <title>Flipkart</title>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  </head>
 
-</head>
-
-<body>
-    <!--  Main container for whole page -->
-    <header class="container">
-        <!-- Navbar Starts here -->
-        <div class="navbar">
-            <div class="nav_left">
-                <div class="logo">
-                    <a href="https://www.flipkart.com"><img class="flipkart_logo"src="./Assets//flipkart-plus_8d85f4.png"></a>
-                    <a href="https://www.flipkart.com/plus" class="logo_text"><span class="explore">Explore</span> <span class="plus">Plus</span><img src="./Assets//plus_aef861.png"></a>
-                </div>
-                <div class="searchbar">
-                    <input class="search_input" type="text" placeholder="Search for product,brand and more">
-                </div>
-            </div>
-            <div class="nav_right">
-                <div class="login">
-                    <button class="loginbutton">Login</button>
-                </div>
-             
-                <div class="more"><p>More</p><i class="fa-sharp fa-solid fa-caret-down"></i></div>
-                <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p>Cart</p></div>
-            </div>
-            
-            
+  <body>
+    <!--  Main container for Navbar-->
+    <header class="mainbody">
+      <!-- Navbar Starts here -->
+      <div class="navbar">
+        <!-- Flipkart logo and Search bar -->
+        <div class="nav_left">
+          <div class="logo">
+            <a href="https://www.flipkart.com"
+              ><img
+                class="flipkart_logo"
+                src="./Assets//flipkart-plus_8d85f4.png"
+            /></a>
+            <a href="https://www.flipkart.com/plus" class="logo_text"
+              ><span class="explore">Explore</span>
+              <span class="plus">Plus</span
+              ><img src="./Assets//plus_aef861.png"
+            /></a>
+          </div>
+          <div class="searchbar">
+            <input
+              class="search_input"
+              type="text"
+              placeholder="Search for product,brand and more"
+            />
+          </div>
         </div>
-        <!-- Navbar ends here -->
-       
-     
+        <!-- Login button ,More and cart -->
+        <div class="nav_right">
+          <div class="login">
+            <button class="loginbutton">Login</button>
+          </div>
+
+          <div class="more">
+            <p>More</p>
+            <i class="fa-sharp fa-solid fa-caret-down"></i>
+          </div>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Cart</p>
+          </div>
+        </div>
+      </div>
     </header>
-   
+ <!-- Main body of the page -->
     <main>
-         <!-- Categories starts here -->
-        <div class="categories">
-            <div class="categories_items"><img class="categories_img" src="./Assets/header_images/29327f40e9c4d26b.webp"><div class="categories_text">Grocery</div></div>
-            <div class="categories_items"><img class="categories_img" src="./Assets/header_images/Mobile.webp"><div class="categories_text">Mobiles</div></div>
-            <div class="categories_items"><img class="categories_img" src="./Assets/header_images/Fashion.webp"><div class="categories_text">Fashion</div></div>
-            <div class="categories_items"><img class="categories_img" src="./Assets/header_images/Electronics.webp"><div class="categories_text">Eletronics<i class="fa-sharp fa-solid fa-angle-down"></i></div></div>
-            <div class="categories_items"><img class="categories_img" src="./Assets/header_images/Homes.webp"><div class="categories_text">Homes<i class="fa-sharp fa-solid fa-angle-down"></i></div></div>
-            <div class="categories_items"><img class="categories_img" src="./Assets/header_images/Appliances.webp"><div class="categories_text">Appliances<i class="fa-sharp fa-solid fa-angle-down"></i></div></div>
-            <div class="categories_items"><img class="categories_img" src="./Assets/header_images/Travel.webp"><div class="categories_text">Travels</div></div>
-            <div class="categories_items"><img class="categories_img" src="./Assets/header_images/offers.webp"><div class="categories_text">Top offers<i class="fa-sharp fa-solid fa-angle-down"></i></div></div>
-            <div class="categories_items"><img class="categories_img" src="./Assets/header_images/Toys.webp"><div class="categories_text">Beauty,Toys and More<i class="fa-sharp fa-solid fa-angle-down"></i></div></div>
-            <div class="categories_items"><img class="categories_img" src="./Assets/header_images/Two-wheel.webp"><div class="categories_text">Two-wheeler</div></div>
-           </div>
-        <!-- Deal of the day section -->
-        <section class="main_body">
-          <section class="abhi">
-            <section class="section deal_of_the_day">
-                <header class="section_title">
-                    <div class="title_text"><span class="section-head">Deal of the Day </span><span class="timer"><i class="fa-solid fa-clock"></i>22:20:36 Left</span></div>
-                   
-                    <button class="view_button">View all</button>
-                </header>
-                <section class="items_grids">
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/iphone.webp"><div class="item_details"><p class="item_title">Plain Cases & Covers</p><p class="item_price">From Rs.140</p><p class="small-des">For Iphone</p></div></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg"><div class="item_details"><p class="item_title">Top Cameras</p><p class="item_price">Shop Now</p><p class="small-des">Sony,Canon.Nikon</p></div></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/Trimmer.webp"><div class="item_details"><p class="item_title">Best of Shavers</p><p class="item_price">From Rs 1665</p><p class="small-des">Philips</p></div></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/Printer.webp"><div class="item_details"><p class="item_title">Printer</p><p class="item_price">From Rs.4000</p><p class="small-des">HP</p></div></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/jugs.jpeg"><p class="item_title">Top Jugs</p><p class="item_price">From Rs.250</p><p class="small-des">Utensils</p></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/womens_clothes.jpeg"><p class="item_title">Womens wear</p><p class="item_price">From Rs.500</p><p class="small-des">For Womens</p></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/Small_bag.webp"><p class="item_title">Travel Bags</p><p class="item_price">From Rs.640</p><p class="small-des">American Tourister</p></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/helmet.jpeg"><p class="item_title">Helmet</p><p class="item_price">From Rs.1000</p><p class="small-des">For safety</p></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/jugs.jpeg"><p class="item_title">Top Jugs</p><p class="item_price">From Rs.250</p><p class="small-des">Utensils</p></article>
-                    
-                </section>
-                
-               </section>
-               <article class="advertisement">
-                <img src="./Assets/Items-img/ad img.jpg">
-               </article>
+      <!-- Categories section starts here -->
+      <div class="categories">
+        <div class="categories_items">
+          <img
+            class="categories_img"
+            src="./Assets/header_images/29327f40e9c4d26b.webp"
+          />
+          <div class="categories_text">Grocery</div>
+        </div>
+        <div class="categories_items">
+          <img
+            class="categories_img"
+            src="./Assets/header_images/Mobile.webp"
+          />
+          <div class="categories_text">Mobiles</div>
+        </div>
+        <div class="categories_items">
+          <img
+            class="categories_img"
+            src="./Assets/header_images/Fashion.webp"
+          />
+          <div class="categories_text">Fashion</div>
+        </div>
+        <!-- Category with dropdown -->
+        <div class="categories_items">
+          <img
+            class="categories_img"
+            src="./Assets/header_images/Electronics.webp"
+          />
+          <div class="categories_text dropmenu">
+            Eletronics<i class="fa-sharp fa-solid fa-angle-down"></i>
+            <div class="dropdowncontent">
+              <a href="#">Tv</a>
+              <a href="#">Mobile</a>
+              <a href="#">Laptops</a>
+              <a href="#">Headphones</a>
+            </div>
+          </div>
+        </div>
+        <div class="categories_items">
+          <img class="categories_img" src="./Assets/header_images/Homes.webp" />
+          <div class="categories_text dropmenu">
+            <span id="buttonforhomes" class="dropbutton">
+              Homes<i class="fa-sharp fa-solid fa-angle-down"></i
+            ></span>
+            <div class="dropdowncontent" id="homeDropdown">
+              <a href="#">Sofa</a>
+              <a href="#">Cushion</a>
+              <a href="#">Curtains</a>
+              <a href="#">Furniture</a>
+            </div>
+          </div>
+        </div>
+        <div class="categories_items">
+          <img
+            class="categories_img"
+            src="./Assets/header_images/Appliances.webp"
+          />
+          <div class="categories_text dropmenu">
+            Appliances<i class="fa-sharp fa-solid fa-angle-down"></i>
+            <div class="dropdowncontent">
+              <a href="#">Mixer</a>
+              <a href="#">Fridge</a>
+              <a href="#">AC</a>
+              <a href="#">Gas Stove</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="categories_items">
+          <img
+            class="categories_img"
+            src="./Assets/header_images/Travel.webp"
+          />
+          <div class="categories_text">Travels</div>
+        </div>
+        <div class="categories_items">
+          <img
+            class="categories_img"
+            src="./Assets/header_images/offers.webp"
+          />
+          <div class="categories_text">Top offers</div>
+        </div>
+        <div class="categories_items toysandmore">
+          <img class="categories_img" src="./Assets/header_images/Toys.webp" />
+          <div class="categories_text dropmenu">
+            <span>Toys and More</span>
+            <i class="fa-sharp fa-solid fa-angle-down"></i>
+            <div class="dropdowncontent" id="toysDropdown">
+              <a href="#">Cars</a>
+              <a href="#">Board Games</a>
+              <a href="#">Bat</a>
+              <a href="#">Football</a>
+            </div>
+          </div>
+        </div>
+        <div class="categories_items">
+          <img
+            class="categories_img"
+            src="./Assets/header_images/Two-wheel.webp"
+          />
+          <div class="categories_text">Two-wheeler</div>
+        </div>
+      </div>
+     
+      <section class="main_body">
+         <!-- Deal of the day section -->
+        <section class="first_section">
+          <section class="section deal_of_the_day">
+            <!-- Deal of the day Section Title Portion -->
+            <header class="section_title">
+              <div class="title_text">
+                <span class="section-head">Deal of the Day </span>
+                <span class="timer">
+                  <i class="fa-regular fa-clock"></i>22:20:36 Left
+                </span>
+              </div>
+
+              <button class="view_button">View all</button>
+            </header>
+             <!-- Deal of the day Image carausel -->
+            <div class="owl-carousel owl-theme">
+              <!-- Individual Item -->
+              <div class="item">
+                <article class="item_box">
+                  <img class="item_img" src="./Assets/Items-img/iphone.webp" />
+                  <div class="item_details">
+                    <p class="item_title">Plain Cases & Covers</p>
+                    <p class="item_price">From Rs.140</p>
+                    <p class="small-des">For Iphone</p>
+                  </div>
+                </article>
+              </div>
+              <!-- Individual Item Ends -->
+              <div class="item">
+                <article class="item_box">
+                  <img
+                    class="item_img"
+                    src="./Assets/Items-img/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg"
+                  />
+                  <div class="item_details">
+                    <p class="item_title">Top Cameras</p>
+                    <p class="item_price">Shop Now</p>
+                    <p class="small-des">Sony,Canon.Nikon</p>
+                  </div>
+                </article>
+              </div>
+              <div class="item">
+                <article class="item_box">
+                  <img class="item_img" src="./Assets/Items-img/Trimmer.webp" />
+                  <div class="item_details">
+                    <p class="item_title">Best of Shavers</p>
+                    <p class="item_price">From Rs 1665</p>
+                    <p class="small-des">Philips</p>
+                  </div>
+                </article>
+              </div>
+              <div class="item">
+                <article class="item_box">
+                  <img class="item_img" src="./Assets/Items-img/Printer.webp" />
+                  <div class="item_details">
+                    <p class="item_title">Printer</p>
+                    <p class="item_price">From Rs.4000</p>
+                    <p class="small-des">HP</p>
+                  </div>
+                </article>
+              </div>
+              <div class="item">
+                <article class="item_box">
+                  <img class="item_img" src="./Assets/Items-img/jugs.jpeg" />
+                  <p class="item_title">Top Jugs</p>
+                  <p class="item_price">From Rs.250</p>
+                  <p class="small-des">Utensils</p>
+                </article>
+              </div>
+              <div class="item">
+                <article class="item_box">
+                  <img
+                    class="item_img"
+                    src="./Assets/Items-img/womens_clothes.jpeg"
+                  />
+                  <p class="item_title">Womens wear</p>
+                  <p class="item_price">From Rs.500</p>
+                  <p class="small-des">For Womens</p>
+                </article>
+              </div>
+              <div class="item">
+                <article class="item_box">
+                  <img
+                    class="item_img"
+                    src="./Assets/Items-img/powerbank.webp"
+                  />
+                  <p class="item_title">PowerBank</p>
+                  <p class="item_price">From Rs.900</p>
+                  <p class="small-des">For Battery Backup</p>
+                </article>
+              </div>
+              <div class="item">
+                <article class="item_box">
+                  <img
+                    class="item_img"
+                    src="./Assets/Items-img/helmet.jpeg"
+                  />
+                  <p class="item_title">Helmey</p>
+                  <p class="item_price">From Rs.500</p>
+                  <p class="small-des">For Safe Ride</p>
+                </article>
+              </div>
+              <div class="item">
+                <article class="item_box">
+                  <img
+                    class="item_img"
+                    src="./Assets/Items-img/towel.jpeg"
+                  />
+                  <p class="item_title">Towels</p>
+                  <p class="item_price">From Rs.500</p>
+                  <p class="small-des">For Womens</p>
+                </article>
+              </div>
+            </div>
           </section>
-              
-               <section class="section">
-                <header class="section_title">
-                    <div class="title_text"><span class="section-head">Toys and More</span></div>
-                   
-                    <button class="view_button">View all</button>
-                </header>
-                <section class="items_grids">
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/Caps.webp"><p class="item_title">Caps</p><p class="item_price">From Rs.140</p><p class="small-des">Boys Caps</p></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/cycle.jpeg"><p class="item_title">Cycles</p><p class="item_price">Shop Now</p><p class="small-des">Herculus,Bsw</p></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/headphone.jpeg"><p class="item_title">Headphones</p><p class="item_price">From Rs 999</p><p class="small-des">Boat, JBL</p></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/helmet.jpeg"><p class="item_title">Helmet</p><p class="item_price">From Rs.1000</p><p class="small-des">For safety</p></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/jugs.jpeg"><p class="item_title">Top Jugs</p><p class="item_price">From Rs.250</p><p class="small-des">Utensils</p></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/womens_clothes.jpeg"><p class="item_title">Womens wear</p><p class="item_price">From Rs.500</p><p class="small-des">For Womens</p></article>
-                    <article class="item_box"><img class="item_img" src="./Assets/Items-img/Small_bag.webp"><p class="item_title">Travel Bags</p><p class="item_price">From Rs.640</p><p class="small-des">American Tourister</p></article>
-                   
-                   
-                </section>
-               </section>
-           
+          <section class="advertisement">
+            <div class="ad_banner_text">Best Of Electronics</div>
+            <button class="view_button ad_button">View all</button>
+
+            <img src="./Assets/Best of electronics.jpg" />
+          </section>
         </section>
-           
+        <!-- Toys and More section  -->
+        <section class="section toys-sec">
+           <!-- Toys and More Title -->
+          <header class="section_title">
+            <div class="title_text">
+              <span class="section-head">Toys and More</span>
+              <div class="timer">Shop Now!</div>
+            </div>
+
+            <button class="view_button">View all</button>
+          </header>
+          <!-- Toys and more Image grid -->
+          <section class="items_grids">
+            <article class="item_box">
+              <img class="item_img" src="./Assets/Items-img/Caps.webp" />
+              <p class="item_title">Caps</p>
+              <p class="item_price">From Rs.140</p>
+              <p class="small-des">Boys Caps</p>
+            </article>
+            <article class="item_box">
+              <img class="item_img" src="./Assets/Items-img/cycle.jpeg" />
+              <p class="item_title">Cycles</p>
+              <p class="item_price">Shop Now</p>
+              <p class="small-des">Herculus,Bsw</p>
+            </article>
+
+            <article class="item_box">
+              <img class="item_img" src="./Assets/Items-img/footwears.webp" />
+              <p class="item_title">Top Footwears</p>
+              <p class="item_price">From Rs.500</p>
+              <p class="small-des">Sandals,Shoes</p>
+            </article>
+            <article class="item_box">
+              <img class="item_img" src="./Assets/Items-img/mensfashion.webp" />
+              <p class="item_title">Mens wear</p>
+              <p class="item_price">From Rs.500</p>
+              <p class="small-des">For Men</p>
+            </article>
+            <article class="item_box">
+              <img class="item_img" src="./Assets/Items-img/Small_bag.webp" />
+              <p class="item_title">Travel Bags</p>
+              <p class="item_price">From Rs.640</p>
+              <p class="small-des">American Tourister</p>
+            </article>
+            <article class="item_box">
+              <img class="item_img" src="./Assets/Items-img/sunglasses.jpeg" />
+              <p class="item_title">Sunglasses</p>
+              <p class="item_price">From Rs.500</p>
+              <p class="small-des">Goggles,Eye Glasses</p>
+            </article>
+            <article class="item_box">
+              <img class="item_img" src="./Assets/Items-img/football.jpeg" />
+              <p class="item_title">Football</p>
+              <p class="item_price">From Rs.800</p>
+              <p class="small-des">Sports</p>
+            </article>
+          </section>
+        </section>
+        
+      </section>
+      <!-- Main Content Ends here -->
     </main>
-    <script src="https://kit.fontawesome.com/bb80167760.js" crossorigin="anonymous"></script>
-</body>
+
+    <!-- Owl Carausel jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+    <!-- Font Awesome Cdn -->
+    <script
+      src="https://kit.fontawesome.com/bb80167760.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
