@@ -58,6 +58,7 @@ html {
   font-style: italic;
   font-family: "Roboto";
   margin-top: -1px;
+  margin-right: 5px;
 }
 .logo_text {
   margin-top: -5px;
@@ -220,6 +221,9 @@ p {
   grid-template-rows: (2, 1fr);
   grid-gap: 4px;
   cursor: pointer;
+}
+.categories_items:hover .categories_text{
+  color: #2874f0;
 }
 .categories_text {
   font-size: 12px;
