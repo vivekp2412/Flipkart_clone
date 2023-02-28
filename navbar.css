@@ -3,9 +3,9 @@
   margin: 0;
   padding: 0;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0;
-} */
+}
 html {
   background-color: #f1f3f6;
 }
