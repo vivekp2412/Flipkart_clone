@@ -3,9 +3,9 @@
   margin: 0;
   padding: 0;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0;
-}
+} */
 html {
   background-color: #f1f3f6;
 }
@@ -208,6 +208,7 @@ p {
   place-items: center;
   max-width: 1280px;
   margin: 0 auto;
+  margin-bottom: -25px;
   overflow-x: scroll;
   background-color: white;
 }
