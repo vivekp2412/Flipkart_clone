@@ -74,6 +74,7 @@ html {
   margin: 0 0px;
   flex: 1;
   width: 564px;
+  position: relative;
 }
 .search_input {
   padding: 0 16px;
@@ -83,6 +84,15 @@ html {
   font-size: 14px;
   height: 36px;
   width: 100%;
+}
+.fa-magnifying-glass{
+  max-height: 36px;
+  max-width: 36px;
+  position: absolute;
+  right: 3%;
+  bottom: 25%;
+  background-color: white;
+  color: #2874f0;
 }
 .login {
   height: 56px;
@@ -100,6 +110,7 @@ html {
   outline: none;
   border: 2px solid white;
   background-color: white;
+  cursor: pointer;
 }
 .more {
   height: 56px;
