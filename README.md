@@ -1,2 +1,2 @@
 
-Link for the Final Website https://finalclone-flipkart-vivek.netlify.app
+Link for the Final Website https://flipkart-clone-vivek.netlify.app
