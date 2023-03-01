@@ -580,3 +580,8 @@ p {
 .owl-next:focus{
   outline: none;
 }
+@media screen and (max-width:1100px) {
+  .dropdowncontent{
+    display: none !important;
+  }
+}
