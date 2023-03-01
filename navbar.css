@@ -58,6 +58,7 @@ html {
   font-style: italic;
   font-family: "Roboto";
   margin-top: -1px;
+  margin-right: 5px;
 }
 .logo_text {
   margin-top: -5px;
@@ -207,6 +208,7 @@ p {
   place-items: center;
   max-width: 1280px;
   margin: 0 auto;
+  margin-bottom: -25px;
   overflow-x: scroll;
   background-color: white;
 }
@@ -220,6 +222,9 @@ p {
   grid-template-rows: (2, 1fr);
   grid-gap: 4px;
   cursor: pointer;
+}
+.categories_items:hover .categories_text{
+  color: #2874f0;
 }
 .categories_text {
   font-size: 12px;
@@ -314,12 +319,14 @@ p {
   font-size: 14px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 .item_price {
   font: 16px;
   font-family: "Roboto", sans-serif;
   color: #388e3c;
   margin: 5px 0;
+  text-align: center;
 }
 .small-des {
   font-size: 14px;
@@ -574,4 +581,9 @@ p {
 }
 .owl-next:focus{
   outline: none;
+}
+@media screen and (max-width:1100px) {
+  .dropdowncontent{
+    display: none !important;
+  }
 }
